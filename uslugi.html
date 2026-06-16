@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/uslugi.css">
+    <title>Usługi - Czyste Marzenia</title>
+</head>
+<body>
+<div class="container">
+
+  <header id="header">
+    <img src="../img/profilowe.png" class="zdjecielogo" alt="logo">
+
+    <nav class="nav-desktop">
+      <a href="index.html" class="menu">Strona główna</a>
+      <a href="uslugi.html" class="menu">Usługi</a>
+      <a href="galeria.html" class="menu">Realizacje</a>
+      <a href="cennik.html" class="menu">Cennik</a>
+    </nav>
+
+    <h1 class="napisglown">Czyste Marzenia</h1>
+
+    <div class="header-contact">
+      <a href="tel:+48884648736" class="kontakt-link">📞 +48 884 648 736</a>
+      <a href="mailto:l@example.com" class="kontakt-link">📩 Napisz do nas</a>
+      <a href="https://www.facebook.com/profile.php?id=61566759786024&locale=pl_PL" target="_blank" rel="noopener noreferrer">
+        <img src="../img/—Pngtree—facebook social media icon_3572498.png" class="fb-icon" alt="Facebook">
+      </a>
+    </div>
+
+    <button class="hamburger" id="hamburger" aria-label="Otwórz menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Strona główna</a>
+      <a href="uslugi.html" class="mobile-link">Usługi</a>
+      <a href="galeria.html" class="mobile-link">Realizacje</a>
+      <a href="cennik.html" class="mobile-link">Cennik</a>
+      <a href="tel:+48884648736" class="mobile-link">📞 +48 884 648 736</a>
+      <a href="mailto:l@example.com" class="mobile-link">📩 CzysteMarzenia</a>
+      <a href="https://www.facebook.com/profile.php?id=61566759786024&locale=pl_PL" class="mobile-link" target="_blank">Facebook</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <span class="page-hero-label">Co oferujemy</span>
+    <h2 class="page-hero-title">Nasze Usługi</h2>
+    <p class="page-hero-sub">Profesjonalne czyszczenie tapicerki, podłóg i ozonowanie — dojazd do klienta</p>
+  </section>
+
+  <section class="slider">
+    <button class="arrow left" onclick="prevSlide()">&#8592;</button>
+    <div class="slides">
+      <img id="prev" alt="poprzednia usługa">
+      <img id="current" alt="aktualna usługa">
+      <img id="next" alt="następna usługa">
+    </div>
+    <button class="arrow right" onclick="nextSlide()">&#8594;</button>
+  </section>
+
+  <section class="nazwauslugi">
+    <p id="serviceTitle"></p>
+  </section>
+
+  <section class="opisuslugi">
+    <p id="serviceDescription"></p>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Zainteresowany usługą?</h2>
+      <p>Zadzwoń lub napisz — bezpłatna wycena w ciągu 24h</p>
+      <div class="cta-btns">
+        <a href="tel:+48884648736" class="btn-primary">📞 +48 884 648 736</a>
+        <a href="cennik.html" class="btn-outline">Zobacz cennik →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../img/profilowe.png" alt="logo" class="footer-logo">
+        <span>Czyste Marzenia</span>
+      </div>
+      <div class="footer-links">
+        <p class="footer-heading">Nawigacja</p>
+        <a href="index.html">Strona główna</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="galeria.html">Realizacje</a>
+        <a href="cennik.html">Cennik</a>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-heading">Kontakt</p>
+        <a href="tel:+48884648736">📞 +48 884 648 736</a>
+        <a href="mailto:l@example.com">📩 CzysteMarzenia</a>
+        <a href="https://www.facebook.com/profile.php?id=61566759786024&locale=pl_PL" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Czyste Marzenia. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobileMenu.classList.toggle('open');
+});
+
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+const services = [
+{
+  image: "../img/uslugi1.png",
+  title: "Pranie tapicerki meblowej i samochodowej",
+  description: "Profesjonalne pranie tapicerki meblowej i samochodowej oraz kompleksowe sprzątanie wnętrza aut – usuwamy plamy, zabrudzenia, kurz, roztocza i nieprzyjemne zapachy, przywracając świeżość i estetyczny wygląd kanap, narożników, sof, foteli, krzeseł, materacy, dywanów, wykładzin oraz tapicerki samochodowej (fotele, kanapy, boczki, podsufitka), wykonujemy także odkurzanie, czyszczenie plastików i odświeżanie wnętrza auta, pracujemy na nowoczesnym sprzęcie i bezpiecznych, skutecznych środkach, stosując metodę prania ekstrakcyjnego, gwarantujemy dokładność, szybkie terminy realizacji i dojazd do klienta. 🛋️🚗✨"
+},
+{
+  image: "../img/podloga2.png",
+  title: "Czyszczenie i polimeryzacja wykładzin PCV i linoleum",
+  description: "Profesjonalne czyszczenie i polimeryzacja wykładzin PCV oraz linoleum – dokładnie usuwamy zabrudzenia, stare warstwy ochronne i osady przy użyciu profesjonalnych maszyn oraz specjalistycznych środków, następnie nakładamy kilka warstw powłoki polimerowej, która zabezpiecza podłogę przed ścieraniem, zarysowaniami i wnikaniem brudu, ułatwia codzienne utrzymanie czystości, nadaje estetyczny połysk oraz wydłuża żywotność wykładziny; usługa polecana do biur, szkół, urzędów, placówek medycznych, sklepów i innych obiektów o dużym natężeniu ruchu. ✨"
+},
+{
+  image: "../img/ozonowanie.png",
+  title: "Ozonowanie samochodów, mieszkań, przedszkoli i biur",
+  description: "Profesjonalne ozonowanie samochodów, mieszkań, biur oraz przedszkoli – skutecznie usuwamy bakterie, wirusy, grzyby, pleśń oraz nieprzyjemne zapachy dzięki nowoczesnym generatorom ozonu, który dociera do trudno dostępnych miejsc i zapewnia dokładną dezynfekcję bez użycia chemii; ozonowanie eliminuje zapach papierosów i zwierząt w samochodach, dezynfekuje klimatyzację, odświeża powietrze w mieszkaniach i biurach, usuwa zapachy po remontach i pożarach, likwiduje pleśń oraz poprawia higienę w przedszkolach i żłobkach, gwarantując szybką, skuteczną i bezpieczną dezynfekcję. ✨🚗🏠"
+},
+{
+  image: "../img/dostawa2.png",
+  title: "Dojazd do klienta",
+  description: "Oferujemy wygodny dojazd bezpośrednio pod wskazany adres – nie musisz nigdzie wychodzić ani transportować mebli. Nasz zespół przyjeżdża z profesjonalnym sprzętem i środkami czystości, gotowy do pracy na miejscu. Obsługujemy klientów indywidualnych oraz firmy na terenie całego regionu."
+}
+,
+{
+  image: "../img/plytki.png",
+  title: "Profesjonalne doczyszczanie fug i płytek – przywróć blask swojej podłodze!",
+  description: "Przywróć swoim powierzchniom świeżość, higienę i estetyczny wygląd – bez konieczności kosztownego remontu. Oferujemy skuteczne i bezpieczne czyszczenie płytek oraz fug z wykorzystaniem specjalistycznego sprzętu i profesjonalnych środków czyszczących."
+}
+];
+
+let current = 0;
+
+function updateSlider() {
+  let prevIndex = (current - 1 + services.length) % services.length;
+  let nextIndex = (current + 1) % services.length;
+  document.getElementById("prev").src = services[prevIndex].image;
+  document.getElementById("current").src = services[current].image;
+  document.getElementById("next").src = services[nextIndex].image;
+  document.getElementById("serviceTitle").textContent = services[current].title;
+  document.getElementById("serviceDescription").textContent = services[current].description;
+}
+
+function nextSlide() {
+  current = (current + 1) % services.length;
+  updateSlider();
+}
+
+function prevSlide() {
+  current = (current - 1 + services.length) % services.length;
+  updateSlider();
+}
+
+updateSlider();
+</script>
+</body>
+</html>

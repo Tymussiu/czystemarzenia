@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <title>Realizacje - Czyste Marzenia</title>
+</head>
+<body>
+<div class="container">
+
+  <header id="header">
+    <img src="../img/profilowe.png" class="zdjecielogo" alt="logo">
+    <nav class="nav-desktop">
+      <a href="index.html" class="menu">Strona główna</a>
+      <a href="uslugi.html" class="menu">Usługi</a>
+      <a href="galeria.html" class="menu">Realizacje</a>
+      <a href="cennik.html" class="menu">Cennik</a>
+    </nav>
+    <h1 class="napisglown">Czyste Marzenia</h1>
+    <div class="header-contact">
+      <a href="tel:+48884648736" class="kontakt-link">📞 +48 884 648 736</a>
+      <a href="mailto:l@example.com" class="kontakt-link">📩 Napisz do nas</a>
+      <a href="https://www.facebook.com/profile.php?id=61566759786024&locale=pl_PL" target="_blank" rel="noopener noreferrer">
+        <img src="../img/—Pngtree—facebook social media icon_3572498.png" class="fb-icon" alt="Facebook">
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Otwórz menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="mobile-menu" id="mobileMenu">
+      <a href="index.html" class="mobile-link">Strona główna</a>
+      <a href="uslugi.html" class="mobile-link">Usługi</a>
+      <a href="galeria.html" class="mobile-link">Realizacje</a>
+      <a href="cennik.html" class="mobile-link">Cennik</a>
+      <a href="tel:+48884648736" class="mobile-link">📞 +48 884 648 736</a>
+      <a href="mailto:l@example.com" class="mobile-link">📩 CzysteMarzenia</a>
+      <a href="https://www.facebook.com/profile.php?id=61566759786024&locale=pl_PL" class="mobile-link" target="_blank">Facebook</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <span class="page-hero-label">Nasze efekty</span>
+    <h2 class="page-hero-title">Realizacje</h2>
+    <p class="page-hero-sub">Zobacz efekty naszej pracy — profesjonalne czyszczenie w każdym szczególe</p>
+  </section>
+
+  <!-- FILTER TABS -->
+  <section class="gallery-section">
+    <div class="filter-tabs">
+      <button class="filter-btn active" data-filter="all">Wszystkie</button>
+      <button class="filter-btn" data-filter="dywan">Dywany</button>
+      <button class="filter-btn" data-filter="podloga">Podłogi</button>
+      <button class="filter-btn" data-filter="sofa">Sofy</button>
+      <button class="filter-btn" data-filter="auto">Auta</button>
+      <button class="filter-btn" data-filter="ozon">Ozonowanie</button>
+    </div>
+
+    <div class="gallery-grid">
+      <div class="gallery-item" data-cat="">
+        <img src="../img/dywan1.png" alt="Dywan">
+        <div class="gallery-overlay"><span>Dywany</span></div>
+      </div>
+      <div class="gallery-item" data-cat="dywan">
+        <img src="../img/glownainfo.png" alt="Ozonowanie">
+        <div class="gallery-overlay"><span>Dywany</span></div>
+      </div>
+      <div class="gallery-item" data-cat="dywan">
+        <img src="../img/dywann.png" alt="Dywan">
+        <div class="gallery-overlay"><span>Dywany</span></div>
+      </div>
+      <div class="gallery-item" data-cat="dywan">
+        <img src="../img/dywan.png" alt="Dywan">
+        <div class="gallery-overlay"><span>Dywany</span></div>
+      </div>
+      <div class="gallery-item" data-cat="dywan">
+        <img src="../img/dywan4.png" alt="Dywan">
+        <div class="gallery-overlay"><span>Dywany</span></div>
+      </div>
+      <div class="gallery-item" data-cat="podloga">
+        <img src="../img/podloga1.png" alt="Podłoga">
+        <div class="gallery-overlay"><span>Podłogi</span></div>
+      </div>
+      <div class="gallery-item" data-cat="podloga">
+        <img src="../img/podloga2.png" alt="Podłoga">
+        <div class="gallery-overlay"><span>Podłogi</span></div>
+      </div>
+      <div class="gallery-item" data-cat="podloga">
+        <img src="../img/podloga3.1.png" alt="Podłoga">
+        <div class="gallery-overlay"><span>Podłogi</span></div>
+      </div>
+      
+      <div class="gallery-item" data-cat="sofa">
+        <img src="../img/sofagaleria.png" alt="Sofa">
+        <div class="gallery-overlay"><span>Sofy</span></div>
+      </div>
+      <div class="gallery-item" data-cat="sofa">
+        <img src="../img/sofagaleria2.png" alt="Sofa">
+        <div class="gallery-overlay"><span>Sofy</span></div>
+      </div>
+      <div class="gallery-item" data-cat="sofa">
+        <img src="../img/sofatop.png" alt="Sofa">
+        <div class="gallery-overlay"><span>Sofy</span></div>
+      </div>
+      <div class="gallery-item" data-cat="auto">
+        <img src="../img/auto1.png" alt="Auto">
+        <div class="gallery-overlay"><span>Auta</span></div>
+      </div>
+      
+      <div class="gallery-item" data-cat="auto">
+        <img src="../img/autobrudas2.png" alt="Auto">
+        <div class="gallery-overlay"><span>Auta</span></div>
+      </div>
+      <div class="gallery-item" data-cat="ozon">
+        <img src="../img/ozonowanie.png" alt="Ozonowanie">
+        <div class="gallery-overlay"><span>Ozonowanie</span></div>
+      </div>
+      <div class="gallery-item" data-cat="ozon">
+        <img src="../img/ozonowanie3.png" alt="Ozonowanie">
+        <div class="gallery-overlay"><span>Ozonowanie</span></div>
+      </div>
+      <div class="gallery-item" data-cat="ozon">
+        <img src="../img/ozonowanie2.png" alt="Ozonowanie">
+        <div class="gallery-overlay"><span>Ozonowanie</span></div>
+      </div>
+      
+      <div class="gallery-item" data-cat="ozon">
+        <img src="../img/ozonowanieauto.png" alt="Ozonowanie">
+        <div class="gallery-overlay"><span>Ozonowanie</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">&#8592;</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <button class="lightbox-next" id="lightboxNext">&#8594;</button>
+  </div>
+
+  <section class="cta-section">
+    <div class="cta-content">
+      <h2>Podoba Ci się efekt?</h2>
+      <p>Zadzwoń — bezpłatna wycena w ciągu 24h</p>
+      <div class="cta-btns">
+        <a href="tel:+48884648736" class="btn-primary">📞 +48 884 648 736</a>
+        <a href="cennik.html" class="btn-outline">Zobacz cennik →</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <img src="../img/profilowe.png" alt="logo" class="footer-logo">
+        <span>Czyste Marzenia</span>
+      </div>
+      <div class="footer-links">
+        <p class="footer-heading">Nawigacja</p>
+        <a href="stronaglowna.html">Strona główna</a>
+        <a href="uslugi.html">Usługi</a>
+        <a href="galeria.html">Realizacje</a>
+        <a href="cennik.html">Cennik</a>
+      </div>
+      <div class="footer-contact">
+        <p class="footer-heading">Kontakt</p>
+        <a href="tel:+48884648736">📞 +48 884 648 736</a>
+        <a href="mailto:l@example.com">📩 CzysteMarzenia</a>
+        <a href="https://www.facebook.com/profile.php?id=61566759786024&locale=pl_PL" target="_blank">Facebook</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Czyste Marzenia. Wszelkie prawa zastrzeżone.</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  mobileMenu.classList.toggle('open');
+});
+
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+const filterBtns = document.querySelectorAll('.filter-btn');
+const items = document.querySelectorAll('.gallery-item');
+
+filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    items.forEach(item => {
+      if (filter === 'all' || item.dataset.cat === filter) {
+        item.classList.remove('hidden');
+      } else {
+        item.classList.add('hidden');
+      }
+    });
+  });
+});
+
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+let visibleItems = [];
+let currentIndex = 0;
+
+function openLightbox(index) {
+  visibleItems = [...document.querySelectorAll('.gallery-item:not(.hidden)')];
+  currentIndex = index;
+  lightboxImg.src = visibleItems[currentIndex].querySelector('img').src;
+  lightbox.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  lightbox.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+items.forEach((item, i) => {
+  item.addEventListener('click', () => {
+    visibleItems = [...document.querySelectorAll('.gallery-item:not(.hidden)')];
+    const visIndex = visibleItems.indexOf(item);
+    openLightbox(visIndex);
+  });
+});
+
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+
+document.getElementById('lightboxPrev').addEventListener('click', () => {
+  currentIndex = (currentIndex - 1 + visibleItems.length) % visibleItems.length;
+  lightboxImg.src = visibleItems[currentIndex].querySelector('img').src;
+});
+
+document.getElementById('lightboxNext').addEventListener('click', () => {
+  currentIndex = (currentIndex + 1) % visibleItems.length;
+  lightboxImg.src = visibleItems[currentIndex].querySelector('img').src;
+});
+
+lightbox.addEventListener('click', (e) => {
+  if (e.target === lightbox) closeLightbox();
+});
+
+document.addEventListener('keydown', (e) => {
+  if (!lightbox.classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') document.getElementById('lightboxPrev').click();
+  if (e.key === 'ArrowRight') document.getElementById('lightboxNext').click();
+});
+</script>
+</body>
+</html>
